@@ -194,7 +194,7 @@ ScrollTrigger.matchMedia({
                 trigger: ".display",
                 start: "top bottom",
                 end: "bottom bottom",
-                snap: 2 / 2,
+                // snap: 2 / 2,
                 // markers:true,
             },
         })
