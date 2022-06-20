@@ -15,6 +15,20 @@ ScrollTrigger.matchMedia({
 
 
     "(min-width: 1008px)": function () {
+        
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.transition = "0.5s ease";
+            document.getElementById("navbar").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+
         gsap.to(".gb", {
             x: "0%",
             duration: 5,
@@ -26,6 +40,20 @@ ScrollTrigger.matchMedia({
                 end: "",
             },
         });
+
+        //"visual" slide in
+        gsap.to(".visual",{
+            scrollTrigger: {
+                trigger: ".hero-img",
+                scrub: 1,
+                start: "top bottom",
+                end: "bottom bottom",
+                toggleActions: "play none none reset",
+
+            },
+            opacity:1,
+        })
+
         gsap.to(".top-first", {
             scrollTrigger: {
                 trigger: ".hero",
@@ -243,6 +271,31 @@ ScrollTrigger.matchMedia({
             // markers:true,
         });
 
+                //Achievements pin
+        gsap.to(".achieve-head",{
+            scrollTrigger:{
+                trigger:".achieve-head",
+                start:"top 12%",
+                endTrigger:".achieve",
+                end:"bottom bottom",
+                scrub:0.5,
+                toggleActions: "play none none reset",
+                pin:true,
+            }
+        })
+
+                //Appreciation slide in
+        gsap.to(".client-head",{
+            scrollTrigger:{
+                trigger:".clients",
+                start:"top 60%",
+                end:"top 10%",
+                scrub:0.3,
+                toggleActions: "play none none reset",
+            },
+            x:"0rem",
+        })
+
         gsap.to(".line-through", {
             scrollTrigger: {
                 trigger: "#contact",
@@ -264,6 +317,32 @@ ScrollTrigger.matchMedia({
     // _________________________________________TAB
 
     "(min-width: 641px) and (max-width: 1007px)": function () {
+
+                /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.transition = "0.5s ease";
+            document.getElementById("navbar").style.top = "-150px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+
+        gsap.to(".visual",{
+            scrollTrigger: {
+                trigger: ".hero-img",
+                scrub: 1,
+                start: "top bottom",
+                end: "bottom bottom",
+                toggleActions: "play none none reset",
+        
+            },
+            opacity:1,
+        })
+
         gsap.to(".hero-img", {
             y: "0%",
             duration: 5,
@@ -433,6 +512,31 @@ ScrollTrigger.matchMedia({
             // markers:true,
         });
 
+         //Achievements pin
+         gsap.to(".achieve-head",{
+            scrollTrigger:{
+                trigger:".achieve-head",
+                start:"top 14%",
+                endTrigger:".achieve",
+                end:"bottom 60%",
+                scrub:0.5,
+                toggleActions: "play none none reset",
+                pin:true,
+            }
+        })
+
+        //Appreciation slide in
+        gsap.to(".client-head",{
+            scrollTrigger:{
+                trigger:".clients",
+                start:"top 60%",
+                end:"top 10%",
+                scrub:0.3,
+                toggleActions: "play none none reset",
+            },
+            x:"-10rem",
+        })
+
         gsap.to(".line-through", {
             scrollTrigger: {
                 trigger: "#contact",
@@ -450,6 +554,32 @@ ScrollTrigger.matchMedia({
     // __________________________________________MOBILE_LARGE
 
     "(min-width: 376px) and (max-width: 640px)": function () {
+
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.transition = "0.5s ease";
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+
+        gsap.to(".visual",{
+            scrollTrigger: {
+                trigger: ".hero-img",
+                scrub: 1,
+                start: "top bottom",
+                end: "bottom bottom",
+                toggleActions: "play none none reset",
+        
+            },
+            opacity:1,
+        })
         gsap.to(".hero-img", {
             y: "0%",
             duration: 5,
@@ -636,6 +766,32 @@ ScrollTrigger.matchMedia({
 
 
     "(max-width: 375px)": function () {
+
+                /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.transition = "0.5s ease";
+            document.getElementById("navbar").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+
+        gsap.to(".visual",{
+            scrollTrigger: {
+                trigger: ".hero-img",
+                scrub: 1,
+                start: "top bottom",
+                end: "bottom bottom",
+                toggleActions: "play none none reset",
+        
+            },
+            opacity:1,
+        })
+        
         gsap.to(".hero-img", {
             transform: "translateY(8%)",
             duration: 5,
@@ -923,13 +1079,13 @@ gsap.to(navele[2],{
     scrollTrigger:{
         trigger:".landing-page",
         start:"top center",
-        endTrigger:".clients",
+        endTrigger:".achieve",
         end:"top center",
         toggleActions:"play none none reset",
         onEnter: ()=>{
-            navele[2].style.color="var(--black)"
+            navele[2].style.color="var(--gb)"
             navele[2].style.setProperty("--navDotSize","0.3rem")
-            navele[2].style.setProperty("--nElementBeforeColor","var(--black)")
+            navele[2].style.setProperty("--nElementBeforeColor","var(--gb)")
         },
         onLeave: ()=>{
             for(let i = 0 ;i<navele.length;i++){
@@ -938,9 +1094,9 @@ gsap.to(navele[2],{
             navele[2].style.setProperty("--navDotSize","0rem")
         },
         onEnterBack: ()=>{
-            navele[2].style.color="var(--black)"
+            navele[2].style.color="var(--gb)"
             navele[2].style.setProperty("--navDotSize","0.3rem")
-            navele[2].style.setProperty("--nElementBeforeColor","var(--black)")
+            navele[2].style.setProperty("--nElementBeforeColor","var(--gb)")
         },
         onLeaveBack: ()=>{
             for(let i = 0 ;i<navele.length;i++){
@@ -949,19 +1105,53 @@ gsap.to(navele[2],{
             navele[2].style.setProperty("--navDotSize","0rem")
         },
     },
-    color:"var(--black)",
+    color:"var(--gb)",
 })
+
 gsap.to(navele[3],{
     scrollTrigger:{
-        trigger:".clients",
+        trigger:".achieve",
+        start:"top center",
+        endTrigger:".clients",
+        end:"bottom center",
+        toggleActions:"play none none reset",
+        onEnter: ()=>{
+            navele[3].style.color="var(--gb)"
+            navele[3].style.setProperty("--navDotSize","0.3rem")
+            navele[3].style.setProperty("--nElementBeforeColor","var(--gb)")
+        },
+        onLeave: ()=>{
+            for(let i = 0 ;i<navele.length;i++){
+                navele[i].style.color="white"
+            }
+            navele[3].style.setProperty("--navDotSize","0rem")
+        },
+        onEnterBack: ()=>{
+            navele[3].style.color="var(--gb)"
+            navele[3].style.setProperty("--navDotSize","0.3rem")
+            navele[3].style.setProperty("--nElementBeforeColor","var(--gb)")
+        },
+        onLeaveBack: ()=>{
+            for(let i = 0 ;i<navele.length;i++){
+                navele[i].style.color="white"
+            }
+            navele[3].style.setProperty("--navDotSize","0rem")
+        },
+    },
+    color:"var(--gb)",
+})
+
+gsap.to(navele[4],{
+    scrollTrigger:{
+        trigger:".contact",
         start:"top center",
         endTrigger:".contact",
         end:"bottom center",
         toggleActions:"play none none reset",
         onEnter: ()=>{
-            navele[3].style.color="var(--black)"
-            navele[3].style.setProperty("--navDotSize","0.3rem")
-            navele[3].style.setProperty("--nElementBeforeColor","var(--black)")
+            navele[4].style.color="var(--gb)"
+            navele[4].style.setProperty("--navDotSize","0.3rem")
+            navele[4].style.setProperty("--nElementBeforeColor","var(--gb)")
         },
         onLeave: ()=>{
             for(let i = 0 ;i<navele.length;i++){
@@ -970,19 +1160,22 @@ gsap.to(navele[3],{
             navele[3].style.setProperty("--navDotSize","0rem")
         },
         onEnterBack: ()=>{
-            navele[3].style.color="var(--black)"
-            navele[3].style.setProperty("--navDotSize","0.3rem")
-            navele[3].style.setProperty("--nElementBeforeColor","var(--black)")
+            navele[4].style.color="var(--gb)"
+            navele[4].style.setProperty("--navDotSize","0.3rem")
+            navele[4].style.setProperty("--nElementBeforeColor","var(--gb)")
         },
         onLeaveBack: ()=>{
             for(let i = 0 ;i<navele.length;i++){
                 navele[i].style.color="white"
             }
-            navele[3].style.setProperty("--navDotSize","0rem")
+            navele[4].style.setProperty("--navDotSize","0rem")
         },
     },
-    color:"var(--black)",
+    color:"var(--gb)",
 })
+
+
+
 
 
 // __________________________opacity annimation of hero text 
@@ -1029,7 +1222,9 @@ hb.addEventListener('click', () => {
     navbar.style.borderBottom="1px solid var(--black)"
     navbar.style.boxShadow = 'none';
     logo.style.backgroundImage = "url('logo-b.png')";
+    navbar.style.position="fixed";
 });
+
 cross.addEventListener('click', () => {
     mnav.style.transform = 'translateY(-130%)';
     hb.classList.remove("cross");
@@ -1037,54 +1232,86 @@ cross.addEventListener('click', () => {
     cross.style.display = "none";
     access.style.display = "inline-block";
     navbar.style.borderBottom="none"
+    // navbar.style.boxShadow = '0px 0px 16px 10px rgb(19 19 19)';
     navbar.style.backgroundColor = x;
     logo.style.backgroundImage = "url('logo-w.png')";
 });
 
 // _________________________NAVBAR transparent
-gsap.to("#navbar", {
-    scrollTrigger: {
-        trigger: ".landing-page",
-        start: "top 70%",
-        endTrigger: ".contact",
-        end: "bottom top",
-        toggleActions: "play none none reset",
-        // markers: true,
-        onLeave: blackToGb,
-        onEnter: gbToBlack,
-        onEnterBack: gbToBlack,
-        onLeaveBack: blackToGb,
-    },
+// gsap.to("#navbar", {
+//     scrollTrigger: {
+//         trigger: ".landing-page",
+//         start: "top 70%",
+//         endTrigger: ".contact",
+//         end: "bottom top",
+//         toggleActions: "play none none reset",
+//         // markers: true,
+//         onLeave: blackToGb,
+//         onEnter: gbToBlack,
+//         onEnterBack: gbToBlack,
+//         onLeaveBack: blackToGb,
+//     },
 
-})
-gsap.to("#navbar", {
-    scrollTrigger: {
-        trigger: ".landing-page",
-        start: "top 70%",
-        endTrigger: ".contact",
-        end: "bottom top",
-        toggleActions: "play none none reset",
-        // markers: true,
-        onEnter: navHover,
-        onLeave: navHoverBack,
-        onEnterBack: navHover,
-        onLeaveBack: navHoverBack,
-    },
+// })
+// gsap.to("#navbar", {
+//     scrollTrigger: {
+//         trigger: ".landing-page",
+//         start: "top 70%",
+//         endTrigger: ".contact",
+//         end: "bottom top",
+//         toggleActions: "play none none reset",
+//         // markers: true,
+//         onEnter: navHover,
+//         onLeave: navHoverBack,
+//         onEnterBack: navHover,
+//         onLeaveBack: navHoverBack,
+//     },
 
-})
+// })
 
-gsap.to(".circle", {
-    scrollTrigger: {
-        trigger: ".clients",
-        start: "top center",
-        end: "top top",
-        scrub: 0.5,
-        id: true,
-        toggleActions: "play none none reset",
-        // markers:true,
-    },
-    rotate: "-50deg",
-})
+
+
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  console.log(slides)
+  console.log(dots)
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+// auto next
+setInterval(
+    function () {
+        document.getElementById('next-rev').click();
+    }, 7000);
+
 
 
 function gbToBlack() {
@@ -1138,6 +1365,7 @@ let n1 = document.querySelector('#n1');
 let n2 = document.querySelector('#n2');
 let n3 = document.querySelector('#n3');
 let n4 = document.querySelector('#n4');
+let n5 = document.querySelector('#n5');
 n1.addEventListener("click", () => {
     mnav.style.transform = 'translateY(-130%)';
     hb.classList.remove("cross");
@@ -1166,6 +1394,15 @@ n3.addEventListener("click", () => {
     logo.style.backgroundImage = "url('logo-w.png')";
 });
 n4.addEventListener("click", () => {
+    mnav.style.transform = 'translateY(-130%)';
+    hb.classList.remove("cross");
+    hb.classList.add("hb");
+    cross.style.display = "none";
+    access.style.display = "inline-block";
+    navbar.style.backgroundColor = 'var(--black)';
+    logo.style.backgroundImage = "url('logo-w.png')";
+});
+n5.addEventListener("click", () => {
     mnav.style.transform = 'translateY(-130%)';
     hb.classList.remove("cross");
     hb.classList.add("hb");
@@ -1278,110 +1515,110 @@ page.forEach((element) => {
 
 // ___________________________client--carousel
 
-const dot = document.querySelectorAll(".dot");
-const tag = document.querySelector(".wrap .tag");
-dot[0].style.outlineOffset = "0.2rem";
-dot[0].style.outline = "1px solid var(--black)";
-dot[0].style.backgroundColor = "var(--black)";
-dot[0].style.border = "none";
-setInterval(
-    function () {
-        next.click();
-    }, 7000);
+// const dot = document.querySelectorAll(".dot");
+// const tag = document.querySelector(".wrap .tag");
+// dot[0].style.outlineOffset = "0.2rem";
+// dot[0].style.outline = "1px solid var(--black)";
+// dot[0].style.backgroundColor = "var(--black)";
+// dot[0].style.border = "none";
+// setInterval(
+//     function () {
+//         next.click();
+//     }, 7000);
 
-wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
-next.addEventListener("click", () => {
-    if (k >= boxes.length - 1) return;
-    wrapBox.style.transition = "transform 0.4s ease-in-out";
-    k++;
-    console.log(k);
-    wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
+// wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
+// next.addEventListener("click", () => {
+//     if (k >= boxes.length - 1) return;
+//     wrapBox.style.transition = "transform 0.4s ease-in-out";
+//     k++;
+//     console.log(k);
+//     wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
 
-    if (k === 1) {
-        tag.innerHTML = "18th December, 2021"
-    }
-    else if (k === 2) {
-        tag.innerHTML = "20th June, 2021"
-    }
-    else if (k === 3) {
-        tag.innerHTML = "5th February, 2022"
-    }
-    else if (k === 4) {
-        tag.innerHTML = "27th July, 2021"
-    }
-    else if (k === 5) {
-        tag.innerHTML = "8th October, 2021"
-    }
+//     if (k === 1) {
+//         tag.innerHTML = "18th December, 2021"
+//     }
+//     else if (k === 2) {
+//         tag.innerHTML = "20th June, 2021"
+//     }
+//     else if (k === 3) {
+//         tag.innerHTML = "5th February, 2022"
+//     }
+//     else if (k === 4) {
+//         tag.innerHTML = "27th July, 2021"
+//     }
+//     else if (k === 5) {
+//         tag.innerHTML = "8th October, 2021"
+//     }
 
 
-    for (let i = 0; i < dot.length; i++) {
-        dot[i].style.outline = "none";
-        dot[i].style.backgroundColor = "transparent";
-        dot[i].style.border = "2px solid var(--black)";
-    }
-    if (k === 6) {
-        dot[0].style.outlineOffset = "0.2rem";
-        dot[0].style.outline = "1px solid var(--black)";
-        dot[0].style.backgroundColor = "var(--black)";
-        dot[0].style.border = "none";
-    }
-    dot[k - 1].style.outlineOffset = "0.2rem";
-    dot[k - 1].style.outline = "1px solid var(--black)";
-    dot[k - 1].style.backgroundColor = "var(--black)";
-    dot[k - 1].style.border = "none";
-})
-prev.addEventListener("click", () => {
-    if (k <= 0) return;
-    wrapBox.style.transition = "transform 0.4s ease-in-out";
-    k--;
-    console.log(k);
-    wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
+//     for (let i = 0; i < dot.length; i++) {
+//         dot[i].style.outline = "none";
+//         dot[i].style.backgroundColor = "transparent";
+//         dot[i].style.border = "2px solid var(--black)";
+//     }
+//     if (k === 6) {
+//         dot[0].style.outlineOffset = "0.2rem";
+//         dot[0].style.outline = "1px solid var(--black)";
+//         dot[0].style.backgroundColor = "var(--black)";
+//         dot[0].style.border = "none";
+//     }
+//     dot[k - 1].style.outlineOffset = "0.2rem";
+//     dot[k - 1].style.outline = "1px solid var(--black)";
+//     dot[k - 1].style.backgroundColor = "var(--black)";
+//     dot[k - 1].style.border = "none";
+// })
+// prev.addEventListener("click", () => {
+//     if (k <= 0) return;
+//     wrapBox.style.transition = "transform 0.4s ease-in-out";
+//     k--;
+//     console.log(k);
+//     wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
 
-    if (k === 1) {
-        tag.innerHTML = "18th December, 2021"
-    }
-    else if (k === 2) {
-        tag.innerHTML = "20th November, 2021"
-    }
-    else if (k === 3) {
-        tag.innerHTML = "10th February, 2022"
-    }
-    else if (k === 4) {
-        tag.innerHTML = "27th July, 2021"
-    }
-    else if (k === 5) {
-        tag.innerHTML = "8th October, 2021"
-    }
+//     if (k === 1) {
+//         tag.innerHTML = "18th December, 2021"
+//     }
+//     else if (k === 2) {
+//         tag.innerHTML = "20th November, 2021"
+//     }
+//     else if (k === 3) {
+//         tag.innerHTML = "10th February, 2022"
+//     }
+//     else if (k === 4) {
+//         tag.innerHTML = "27th July, 2021"
+//     }
+//     else if (k === 5) {
+//         tag.innerHTML = "8th October, 2021"
+//     }
 
-    for (let i = 0; i < dot.length; i++) {
-        dot[i].style.outline = "none";
-        dot[i].style.backgroundColor = "transparent";
-        dot[i].style.border = "2px solid var(--black)";
-    }
-    if (k === 0) {
-        dot[4].style.outlineOffset = "0.2rem";
-        dot[4].style.outline = "1px solid var(--black)";
-        dot[4].style.backgroundColor = "var(--black)";
-        dot[4].style.border = "none";
-    }
-    dot[k - 1].style.outlineOffset = "0.2rem";
-    dot[k - 1].style.outline = "1px solid var(--black)";
-    dot[k - 1].style.backgroundColor = "var(--black)";
-    dot[k - 1].style.border = "none";
-})
+//     for (let i = 0; i < dot.length; i++) {
+//         dot[i].style.outline = "none";
+//         dot[i].style.backgroundColor = "transparent";
+//         dot[i].style.border = "2px solid var(--black)";
+//     }
+//     if (k === 0) {
+//         dot[4].style.outlineOffset = "0.2rem";
+//         dot[4].style.outline = "1px solid var(--black)";
+//         dot[4].style.backgroundColor = "var(--black)";
+//         dot[4].style.border = "none";
+//     }
+//     dot[k - 1].style.outlineOffset = "0.2rem";
+//     dot[k - 1].style.outline = "1px solid var(--black)";
+//     dot[k - 1].style.backgroundColor = "var(--black)";
+//     dot[k - 1].style.border = "none";
+// })
 
-wrapBox.addEventListener("transitionend", () => {
-    if (boxes[k].id === "last-clone") {
-        wrapBox.style.transition = "none";
-        k = boxes.length - 2;
-        wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
-    }
-    if (boxes[k].id === "first-clone") {
-        wrapBox.style.transition = "none";
-        k = boxes.length - k;
-        wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
-    }
-})
+// wrapBox.addEventListener("transitionend", () => {
+//     if (boxes[k].id === "last-clone") {
+//         wrapBox.style.transition = "none";
+//         k = boxes.length - 2;
+//         wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
+//     }
+//     if (boxes[k].id === "first-clone") {
+//         wrapBox.style.transition = "none";
+//         k = boxes.length - k;
+//         wrapBox.style.transform = "translateY(" + (-size * k) + "px)";
+//     }
+// })
 
 
 
