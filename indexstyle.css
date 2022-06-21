@@ -665,8 +665,9 @@ body {
     font-family: var(--tfont);
     text-align: justify;
     font-size: 1rem;
-    color: rgb(161, 161, 161);
+    color: rgb(255 255 255 / 70%);
     line-height: 1.4rem;
+    font-weight: 200;
     padding-bottom: 6rem;
 }
 
@@ -1612,7 +1613,8 @@ body {
     height: 10px;
     width: 10px;
     margin: 0 2px;
-    background-color: rgba(187, 187, 187, 0.473);
+    
+    background-color: rgb(255 255 255 / 40%);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -2420,7 +2422,7 @@ footer {
         flex-direction: column;
         border-top-left-radius: 3rem;
         border-top-right-radius: 3rem;
-        height: 70rem;
+        height: 60rem;
     }
 
     #about .left {
@@ -2469,7 +2471,7 @@ footer {
     }
 
     .about .line {
-        width: 0.3rem;
+        width: 0.2rem;
         margin-left: 3rem;
         background: linear-gradient(180deg, var(--gb), var(--lgreen));
     }
@@ -2482,7 +2484,7 @@ footer {
 
     .abt-text>p {
         text-align: justify;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 1.6;
         padding-bottom: 2rem;
     }
@@ -2539,8 +2541,8 @@ footer {
     .w-text {
         font-size: 1.2rem;
         /* line-height: 1.8rem; */
-        text-align: center;
-        width: 78%;
+        text-align: justify;
+        width: 75%;
         font-weight: 200;
         opacity: 0.8;
         margin: 0rem;
@@ -3071,7 +3073,7 @@ footer {
         flex-direction: column;
         border-top-left-radius: 3rem;
         border-top-right-radius: 3rem;
-        height: 55rem;
+        height: 68rem;
     }
 
     #about .left {
@@ -3119,7 +3121,7 @@ footer {
     }
 
     .about .line {
-        margin-left: 2.6rem;
+        margin-left: 3rem;
     }
 
     .abt-text {
@@ -3185,7 +3187,7 @@ footer {
     .w-text {
         font-size: 1.1rem;
         line-height: 1.8rem;
-        text-align: center;
+        text-align: justify;
         width: 72%;
         font-weight: 200;
         opacity: 0.8;
@@ -3261,17 +3263,17 @@ footer {
     }
 
     #lp-right-arrow {
-        background-size: 2rem;
+        background-size: 1.5rem;
         height: 22%;
         opacity: 1;
-        margin-bottom: 25%;
+        margin-bottom: 15%;
     }
 
     #lp-left-arrow {
-        background-size: 2rem;
+        background-size: 1.5rem;
         height: 22%;
         opacity: 1;
-        margin-bottom: 25%;
+        margin-bottom: 15%;
     }
 
     .circle {
@@ -3931,6 +3933,9 @@ footer {
     .box-right {
         line-height: 1.5rem;
         font-size: 1.2rem;
+    }
+    #lp-right-arrow, #lp-left-arrow {
+        margin-bottom: 15rem;
     }
 
     .box-left h5 {

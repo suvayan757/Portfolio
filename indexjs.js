@@ -581,7 +581,7 @@ ScrollTrigger.matchMedia({
             opacity:1,
         })
         gsap.to(".hero-img", {
-            y: "0%",
+            y: "5%",
             duration: 5,
             scrollTrigger: {
                 trigger: ".hero",
@@ -793,7 +793,7 @@ ScrollTrigger.matchMedia({
         })
         
         gsap.to(".hero-img", {
-            transform: "translateY(8%)",
+            transform: "translateY(10%)",
             duration: 5,
             scrollTrigger: {
                 trigger: ".hero",
