@@ -236,7 +236,7 @@ body {
     top: 45%;
     width: var(--navDotSize, 0rem);
     height: var(--navDotSize, 0rem);
-    background-color: var(--nElementBeforeColor, #3F97E3);
+    background-color: var(--nElementBeforeColor, #F9F871);
     border-radius: 50%;
 }
 
@@ -247,7 +247,7 @@ body {
     top: 45%;
     width: 0rem;
     height: 0rem;
-    background-color: var(--nElementBeforeColor, #3F97E3);
+    background-color: var(--nElementBeforeColor, #F9F871);
     border-radius: 50%;
     animation: navelement 0.3s ease-in-out 1 forwards;
 }
@@ -403,6 +403,8 @@ body {
     font-size: 8rem;
     letter-spacing: 3px;
     font-family: 'Oswald', sans-serif;
+    line-height: 8rem;
+    padding-bottom: 2rem;
     /* margin-top: 18%; */
 }
 .portfolio {
@@ -571,7 +573,7 @@ body {
     font-weight: 500;
     font-size: 2rem;
     padding: 0.5rem 3rem;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px var(--black);
     color: transparent;
     animation: marquee 2s linear infinite;
 }
@@ -614,6 +616,12 @@ body {
 #two{
     padding: 2rem 0rem;
 
+}
+.rev{
+    margin-top: 2rem;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
 }
 
 #four{
@@ -675,12 +683,16 @@ body {
     width: 80%;
     height: 80%;
 }
-#lightbox-img-1{background-image: url('i0.jpg');}
-#lightbox-img-2{background-image: url('i1.jpg');}
-#lightbox-img-3{background-image: url('i2.jpg');}
-#lightbox-img-4{background-image: url('i3.jpg');}
-#lightbox-img-5{background-image: url('i4.jpg');}
-#lightbox-img-6{background-image: url('i5.jpg');}
+#lightbox-img-1{background-image: url('l0.jpg');}
+#lightbox-img-2{background-image: url('l1.jpg');}
+#lightbox-img-3{background-image: url('l2.jpg');}
+#lightbox-img-4{background-image: url('l3.jpg');}
+#lightbox-img-5{background-image: url('l4.jpg');}
+#lightbox-img-6{background-image: url('l5.jpg');}
+#lightbox-img-7{background-image: url('l6.jpg');}
+#lightbox-img-8{background-image: url('l7.jpg');}
+#lightbox-img-9{background-image: url('l8.jpg');}
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -756,22 +768,31 @@ body {
     transition: 0.3s ease;
 }
 .dot:nth-child(1){
-    background-image: url('i0.jpg');
+    background-image: url('l0.jpg');
 }
 .dot:nth-child(2){
-    background-image: url('i1.jpg');
+    background-image: url('l1.jpg');
 }
 .dot:nth-child(3){
-    background-image: url('i2.jpg');
+    background-image: url('l2.jpg');
 }
 .dot:nth-child(4){
-    background-image: url('i3.jpg');
+    background-image: url('l3.jpg');
 }
 .dot:nth-child(5){
-    background-image: url('i4.jpg');
+    background-image: url('l4.jpg');
 }
 .dot:nth-child(6){
-    background-image: url('i5.jpg');
+    background-image: url('l5.jpg');
+}
+.dot:nth-child(7){
+    background-image: url('l6.jpg');
+}
+.dot:nth-child(8){
+    background-image: url('l7.jpg');
+}
+.dot:nth-child(9){
+    background-image: url('l8.jpg');
 }
 
 .active,
@@ -837,7 +858,7 @@ body {
     background-image: url('poster_hero-mini-view.gif');
 }
 #img-2{
-    background-image: url('logo_hero-mini-view.gif');
+    background-image: url('illustration_hero-mini-view.gif');
 }
 #img-3{
     background-image: url('random_hero-mini-view.gif');
@@ -1042,7 +1063,7 @@ footer {
     }
 
     .hero-head {
-        font-size: 4rem;
+        font-size: 7rem;
     }
     .hero-text{
         width: 80%;
@@ -1069,7 +1090,7 @@ footer {
         width: 100%;
     }
     .featuring-text {
-        padding: 2rem 1rem 1rem 2rem;
+        padding: 2rem 1rem;
     }
     .featuring-head{
         font-size: 0.9rem;
@@ -1209,11 +1230,9 @@ footer {
         height: 2.4rem;
     }
     .hero-head {
-        font-size: 4rem;
+        font-size: 7rem;
     }
-    .hero-head::before {
-        left: 33%;
-    }
+
     .hero-text{
         width: 80%;
         font-size: 1.2rem;
@@ -1239,7 +1258,7 @@ footer {
         width: 100%;
     }
     .featuring-text {
-        padding: 2rem 1rem 1rem 2rem;
+        padding: 2rem 1rem;
     }
     .featuring-head{
         font-size: 0.9rem;
@@ -1419,6 +1438,10 @@ footer {
         padding: 1rem 2rem;
     }
     /*_________________________________________________WORK */
+    
+    .marquee p{
+        font-size: 3rem;
+    }
 
     .display-works {
         padding: 6rem 0.5rem;
@@ -1467,8 +1490,9 @@ footer {
         margin-top: 2rem;
         padding: 4rem 2rem;
     }
+    
     #four{
-        padding: 1.5rem;
+        padding: 2.5rem;
     }
     .five-img{
         margin-bottom: 0rem;

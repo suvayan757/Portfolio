@@ -1093,7 +1093,7 @@ footer {
     }
 
     .hero-head {
-        font-size: 4rem;
+        font-size: 6rem;
     }
     .hero-text{
         width: 80%;
@@ -1274,10 +1274,7 @@ footer {
         height: 2.4rem;
     }
     .hero-head {
-        font-size: 4rem;
-    }
-    .hero-head::before {
-        left: 33%;
+        font-size: 6rem;
     }
     .hero-text{
         width: 80%;
@@ -1484,9 +1481,6 @@ footer {
         font-size: 1.5rem;
         line-height: 1.8;
         padding-bottom: 2rem;
-    }
-    .hero-head::before {
-        font-size: 1.2rem;
     }
     .other-works {
         font-size: 1.6rem;
