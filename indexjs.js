@@ -15,18 +15,18 @@ ScrollTrigger.matchMedia({
 
 
     "(min-width: 1008px)": function () {
-        
+
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.transition = "0.5s ease";
-            document.getElementById("navbar").style.top = "-80px";
-        }
-        prevScrollpos = currentScrollPos;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.transition = "0.5s ease";
+                document.getElementById("navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
         }
 
         gsap.to(".gb", {
@@ -42,7 +42,7 @@ ScrollTrigger.matchMedia({
         });
 
         //"visual" slide in
-        gsap.to(".visual",{
+        gsap.to(".visual", {
             scrollTrigger: {
                 trigger: ".hero-img",
                 scrub: 1,
@@ -51,7 +51,7 @@ ScrollTrigger.matchMedia({
                 toggleActions: "play none none reset",
 
             },
-            opacity:1,
+            opacity: 1,
         })
 
         gsap.to(".top-first", {
@@ -271,29 +271,29 @@ ScrollTrigger.matchMedia({
             // markers:true,
         });
 
-                //Achievements pin
-        gsap.to(".achieve-head",{
-            scrollTrigger:{
-                trigger:".achieve-head",
-                start:"top 12%",
-                endTrigger:".achieve",
-                end:"bottom bottom",
-                scrub:0.5,
+        //Achievements pin
+        gsap.to(".achieve-head", {
+            scrollTrigger: {
+                trigger: ".achieve-head",
+                start: "top 12%",
+                endTrigger: ".achieve",
+                end: "bottom bottom",
+                scrub: 0.5,
                 toggleActions: "play none none reset",
-                pin:true,
+                pin: true,
             }
         })
 
-                //Appreciation slide in
-        gsap.to(".client-head",{
-            scrollTrigger:{
-                trigger:".clients",
-                start:"top 60%",
-                end:"top 10%",
-                scrub:0.3,
+        //Appreciation slide in
+        gsap.to(".client-head", {
+            scrollTrigger: {
+                trigger: ".clients",
+                start: "top 60%",
+                end: "top 10%",
+                scrub: 0.3,
                 toggleActions: "play none none reset",
             },
-            x:"0rem",
+            x: "0rem",
         })
 
         gsap.to(".line-through", {
@@ -318,29 +318,29 @@ ScrollTrigger.matchMedia({
 
     "(min-width: 641px) and (max-width: 1007px)": function () {
 
-                /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.transition = "0.5s ease";
-            document.getElementById("navbar").style.top = "-150px";
-        }
-        prevScrollpos = currentScrollPos;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.transition = "0.5s ease";
+                document.getElementById("navbar").style.top = "-150px";
+            }
+            prevScrollpos = currentScrollPos;
         }
 
-        gsap.to(".visual",{
+        gsap.to(".visual", {
             scrollTrigger: {
                 trigger: ".hero-img",
                 scrub: 1,
                 start: "top bottom",
                 end: "bottom bottom",
                 toggleActions: "play none none reset",
-        
+
             },
-            opacity:1,
+            opacity: 1,
         })
 
         gsap.to(".hero-img", {
@@ -512,29 +512,29 @@ ScrollTrigger.matchMedia({
             // markers:true,
         });
 
-         //Achievements pin
-         gsap.to(".achieve-head",{
-            scrollTrigger:{
-                trigger:".achieve-head",
-                start:"top 14%",
-                endTrigger:".achieve",
-                end:"bottom 60%",
-                scrub:0.5,
+        //Achievements pin
+        gsap.to(".achieve-head", {
+            scrollTrigger: {
+                trigger: ".achieve-head",
+                start: "top 14%",
+                endTrigger: ".achieve",
+                end: "bottom 60%",
+                scrub: 0.5,
                 toggleActions: "play none none reset",
-                pin:true,
+                pin: true,
             }
         })
 
         //Appreciation slide in
-        gsap.to(".client-head",{
-            scrollTrigger:{
-                trigger:".clients",
-                start:"top 60%",
-                end:"top 10%",
-                scrub:0.3,
+        gsap.to(".client-head", {
+            scrollTrigger: {
+                trigger: ".clients",
+                start: "top 60%",
+                end: "top 10%",
+                scrub: 0.3,
                 toggleActions: "play none none reset",
             },
-            x:"-10rem",
+            x: "-10rem",
         })
 
         gsap.to(".line-through", {
@@ -557,28 +557,28 @@ ScrollTrigger.matchMedia({
 
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
 
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.transition = "0.5s ease";
-            document.getElementById("navbar").style.top = "-100px";
-        }
-        prevScrollpos = currentScrollPos;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.transition = "0.5s ease";
+                document.getElementById("navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
         }
 
-        gsap.to(".visual",{
+        gsap.to(".visual", {
             scrollTrigger: {
                 trigger: ".hero-img",
                 scrub: 1,
                 start: "top bottom",
                 end: "bottom bottom",
                 toggleActions: "play none none reset",
-        
+
             },
-            opacity:1,
+            opacity: 1,
         })
         gsap.to(".hero-img", {
             y: "5%",
@@ -657,7 +657,7 @@ ScrollTrigger.matchMedia({
                 // markers:true,
             },
             // y: 300,
-            y:displace,
+            y: displace,
         });
         gsap.to("#w-line", {
             scrollTrigger: {
@@ -767,31 +767,31 @@ ScrollTrigger.matchMedia({
 
     "(max-width: 375px)": function () {
 
-                /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.transition = "0.5s ease";
-            document.getElementById("navbar").style.top = "-80px";
-        }
-        prevScrollpos = currentScrollPos;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.transition = "0.5s ease";
+                document.getElementById("navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
         }
 
-        gsap.to(".visual",{
+        gsap.to(".visual", {
             scrollTrigger: {
                 trigger: ".hero-img",
                 scrub: 1,
                 start: "top bottom",
                 end: "bottom bottom",
                 toggleActions: "play none none reset",
-        
+
             },
-            opacity:1,
+            opacity: 1,
         })
-        
+
         gsap.to(".hero-img", {
             transform: "translateY(10%)",
             duration: 5,
@@ -871,7 +871,7 @@ ScrollTrigger.matchMedia({
                 // markers:true,
             },
             // y: 210,
-            y:displace,
+            y: displace,
         });
         gsap.to("#w-line", {
             scrollTrigger: {
@@ -985,193 +985,193 @@ ScrollTrigger.matchMedia({
 
 let navele = document.querySelectorAll(".nav-element");
 
-gsap.to(navele[0],{
-    scrollTrigger:{
-        trigger:".hero-img",
-        start:"top bottom",
-        endTrigger:".about",
-        end:"top center",
-        toggleActions:"play none none reset",
-        onEnter: ()=>{
-            navele[0].style.color="var(--gb)"
-            navele[0].style.setProperty("--navDotSize","0.3rem")
+gsap.to(navele[0], {
+    scrollTrigger: {
+        trigger: ".hero-img",
+        start: "top bottom",
+        endTrigger: ".about",
+        end: "top center",
+        toggleActions: "play none none reset",
+        onEnter: () => {
+            navele[0].style.color = "var(--gb)"
+            navele[0].style.setProperty("--navDotSize", "0.3rem")
         },
-        onLeave: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeave: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[0].style.setProperty("--navDotSize","0rem")
+            navele[0].style.setProperty("--navDotSize", "0rem")
         },
-        onEnterBack: ()=>{
-            navele[0].style.color="var(--gb)"
-            navele[0].style.setProperty("--navDotSize","0.3rem")
+        onEnterBack: () => {
+            navele[0].style.color = "var(--gb)"
+            navele[0].style.setProperty("--navDotSize", "0.3rem")
         },
-        onLeaveBack: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeaveBack: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[0].style.setProperty("--navDotSize","0rem")
+            navele[0].style.setProperty("--navDotSize", "0rem")
         },
     },
-    color:"var(--gb)",
+    color: "var(--gb)",
 })
-gsap.to(navele[1],{
-    scrollTrigger:{
-        trigger:".about",
-        start:"top center",
-        endTrigger:".works",
-        end:"top center",
-        toggleActions:"play none none reset",
-        onEnter: ()=>{
-            navele[1].style.color="var(--gb)"
-            navele[1].style.setProperty("--navDotSize","0.3rem")
+gsap.to(navele[1], {
+    scrollTrigger: {
+        trigger: ".about",
+        start: "top center",
+        endTrigger: ".works",
+        end: "top center",
+        toggleActions: "play none none reset",
+        onEnter: () => {
+            navele[1].style.color = "var(--gb)"
+            navele[1].style.setProperty("--navDotSize", "0.3rem")
         },
-        onLeave: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeave: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[1].style.setProperty("--navDotSize","0rem")
+            navele[1].style.setProperty("--navDotSize", "0rem")
         },
-        onEnterBack: ()=>{
-            navele[1].style.color="var(--gb)"
-            navele[1].style.setProperty("--navDotSize","0.3rem")
+        onEnterBack: () => {
+            navele[1].style.color = "var(--gb)"
+            navele[1].style.setProperty("--navDotSize", "0.3rem")
         },
-        onLeaveBack: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeaveBack: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[1].style.setProperty("--navDotSize","0rem")
+            navele[1].style.setProperty("--navDotSize", "0rem")
         },
     },
-    color:"var(--gb)",
+    color: "var(--gb)",
 })
-gsap.to(navele[2],{
-    scrollTrigger:{
-        trigger:".works",
-        start:"top center",
-        endTrigger:".landing-page",
-        end:"top center",
-        toggleActions:"play none none reset",
-        onEnter: ()=>{
-            navele[2].style.color="var(--gb)"
-            navele[2].style.setProperty("--navDotSize","0.3rem")
+gsap.to(navele[2], {
+    scrollTrigger: {
+        trigger: ".works",
+        start: "top center",
+        endTrigger: ".landing-page",
+        end: "top center",
+        toggleActions: "play none none reset",
+        onEnter: () => {
+            navele[2].style.color = "var(--gb)"
+            navele[2].style.setProperty("--navDotSize", "0.3rem")
         },
-        onLeave: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeave: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[2].style.setProperty("--navDotSize","0rem")
+            navele[2].style.setProperty("--navDotSize", "0rem")
         },
-        onEnterBack: ()=>{
-            navele[2].style.color="var(--gb)"
-            navele[2].style.setProperty("--navDotSize","0.3rem")
+        onEnterBack: () => {
+            navele[2].style.color = "var(--gb)"
+            navele[2].style.setProperty("--navDotSize", "0.3rem")
         },
-        onLeaveBack: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeaveBack: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[2].style.setProperty("--navDotSize","0rem")
+            navele[2].style.setProperty("--navDotSize", "0rem")
         },
     },
-    color:"var(--gb)",
+    color: "var(--gb)",
 })
-gsap.to(navele[2],{
-    scrollTrigger:{
-        trigger:".landing-page",
-        start:"top center",
-        endTrigger:".achieve",
-        end:"top center",
-        toggleActions:"play none none reset",
-        onEnter: ()=>{
-            navele[2].style.color="var(--gb)"
-            navele[2].style.setProperty("--navDotSize","0.3rem")
-            navele[2].style.setProperty("--nElementBeforeColor","var(--gb)")
+gsap.to(navele[2], {
+    scrollTrigger: {
+        trigger: ".landing-page",
+        start: "top center",
+        endTrigger: ".achieve",
+        end: "top center",
+        toggleActions: "play none none reset",
+        onEnter: () => {
+            navele[2].style.color = "var(--gb)"
+            navele[2].style.setProperty("--navDotSize", "0.3rem")
+            navele[2].style.setProperty("--nElementBeforeColor", "var(--gb)")
         },
-        onLeave: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeave: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[2].style.setProperty("--navDotSize","0rem")
+            navele[2].style.setProperty("--navDotSize", "0rem")
         },
-        onEnterBack: ()=>{
-            navele[2].style.color="var(--gb)"
-            navele[2].style.setProperty("--navDotSize","0.3rem")
-            navele[2].style.setProperty("--nElementBeforeColor","var(--gb)")
+        onEnterBack: () => {
+            navele[2].style.color = "var(--gb)"
+            navele[2].style.setProperty("--navDotSize", "0.3rem")
+            navele[2].style.setProperty("--nElementBeforeColor", "var(--gb)")
         },
-        onLeaveBack: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeaveBack: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[2].style.setProperty("--navDotSize","0rem")
+            navele[2].style.setProperty("--navDotSize", "0rem")
         },
     },
-    color:"var(--gb)",
-})
-
-gsap.to(navele[3],{
-    scrollTrigger:{
-        trigger:".achieve",
-        start:"top center",
-        endTrigger:".clients",
-        end:"bottom center",
-        toggleActions:"play none none reset",
-        onEnter: ()=>{
-            navele[3].style.color="var(--gb)"
-            navele[3].style.setProperty("--navDotSize","0.3rem")
-            navele[3].style.setProperty("--nElementBeforeColor","var(--gb)")
-        },
-        onLeave: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
-            }
-            navele[3].style.setProperty("--navDotSize","0rem")
-        },
-        onEnterBack: ()=>{
-            navele[3].style.color="var(--gb)"
-            navele[3].style.setProperty("--navDotSize","0.3rem")
-            navele[3].style.setProperty("--nElementBeforeColor","var(--gb)")
-        },
-        onLeaveBack: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
-            }
-            navele[3].style.setProperty("--navDotSize","0rem")
-        },
-    },
-    color:"var(--gb)",
+    color: "var(--gb)",
 })
 
-gsap.to(navele[4],{
-    scrollTrigger:{
-        trigger:".contact",
-        start:"top center",
-        endTrigger:".contact",
-        end:"bottom center",
-        toggleActions:"play none none reset",
-        onEnter: ()=>{
-            navele[4].style.color="var(--gb)"
-            navele[4].style.setProperty("--navDotSize","0.3rem")
-            navele[4].style.setProperty("--nElementBeforeColor","var(--gb)")
+gsap.to(navele[3], {
+    scrollTrigger: {
+        trigger: ".achieve",
+        start: "top center",
+        endTrigger: ".clients",
+        end: "bottom center",
+        toggleActions: "play none none reset",
+        onEnter: () => {
+            navele[3].style.color = "var(--gb)"
+            navele[3].style.setProperty("--navDotSize", "0.3rem")
+            navele[3].style.setProperty("--nElementBeforeColor", "var(--gb)")
         },
-        onLeave: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeave: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[3].style.setProperty("--navDotSize","0rem")
+            navele[3].style.setProperty("--navDotSize", "0rem")
         },
-        onEnterBack: ()=>{
-            navele[4].style.color="var(--gb)"
-            navele[4].style.setProperty("--navDotSize","0.3rem")
-            navele[4].style.setProperty("--nElementBeforeColor","var(--gb)")
+        onEnterBack: () => {
+            navele[3].style.color = "var(--gb)"
+            navele[3].style.setProperty("--navDotSize", "0.3rem")
+            navele[3].style.setProperty("--nElementBeforeColor", "var(--gb)")
         },
-        onLeaveBack: ()=>{
-            for(let i = 0 ;i<navele.length;i++){
-                navele[i].style.color="white"
+        onLeaveBack: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
             }
-            navele[4].style.setProperty("--navDotSize","0rem")
+            navele[3].style.setProperty("--navDotSize", "0rem")
         },
     },
-    color:"var(--gb)",
+    color: "var(--gb)",
+})
+
+gsap.to(navele[4], {
+    scrollTrigger: {
+        trigger: ".contact",
+        start: "top center",
+        endTrigger: ".contact",
+        end: "bottom center",
+        toggleActions: "play none none reset",
+        onEnter: () => {
+            navele[4].style.color = "var(--gb)"
+            navele[4].style.setProperty("--navDotSize", "0.3rem")
+            navele[4].style.setProperty("--nElementBeforeColor", "var(--gb)")
+        },
+        onLeave: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
+            }
+            navele[3].style.setProperty("--navDotSize", "0rem")
+        },
+        onEnterBack: () => {
+            navele[4].style.color = "var(--gb)"
+            navele[4].style.setProperty("--navDotSize", "0.3rem")
+            navele[4].style.setProperty("--nElementBeforeColor", "var(--gb)")
+        },
+        onLeaveBack: () => {
+            for (let i = 0; i < navele.length; i++) {
+                navele[i].style.color = "white"
+            }
+            navele[4].style.setProperty("--navDotSize", "0rem")
+        },
+    },
+    color: "var(--gb)",
 })
 
 
@@ -1204,6 +1204,7 @@ let body = document.querySelector("body");
 let access = document.querySelector("#access");
 let hb = document.querySelector(".hb");
 let cross = document.querySelector("#crs");
+let scrollDownOnce = document.querySelector(".scroll-down-once");
 const wrapBox = document.querySelector(".wrap-box");
 const boxes = document.querySelectorAll(".box");
 const next = document.querySelector("#right-arrow");
@@ -1219,10 +1220,10 @@ hb.addEventListener('click', () => {
     cross.style.display = "inline-block"
     x = navbar.style.backgroundColor;
     navbar.style.backgroundColor = 'white';
-    navbar.style.borderBottom="1px solid var(--black)"
+    navbar.style.borderBottom = "1px solid var(--black)"
     navbar.style.boxShadow = 'none';
     logo.style.backgroundImage = "url('logo-b.png')";
-    navbar.style.position="fixed";
+    navbar.style.position = "fixed";
 });
 
 cross.addEventListener('click', () => {
@@ -1231,11 +1232,36 @@ cross.addEventListener('click', () => {
     hb.classList.add("hb");
     cross.style.display = "none";
     access.style.display = "inline-block";
-    navbar.style.borderBottom="none"
+    navbar.style.borderBottom = "none"
     // navbar.style.boxShadow = '0px 0px 16px 10px rgb(19 19 19)';
     navbar.style.backgroundColor = x;
     logo.style.backgroundImage = "url('logo-w.png')";
 });
+
+
+// scroll-down-once
+gsap.to(".scroll-down-once", {
+    scrollTrigger: {
+        trigger: ".worksample",
+        start: "top top",
+        endTrigger: "w-lgreen",
+        end: "bottom top",
+        onEnter:vanish,
+    },
+    opacity: "1",
+    y: 0,
+})
+
+function vanish() {
+    setTimeout(() => {
+        scrollDownOnce.style.transition="0.3s ease";
+        scrollDownOnce.style.transform="translateY(-2rem)"
+        scrollDownOnce.style.opacity="0"
+        setTimeout(()=>{
+            scrollDownOnce.style.display = "none";
+        },1000)
+    },3000);
+}
 
 // _________________________NAVBAR transparent
 // gsap.to("#navbar", {
@@ -1280,30 +1306,30 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  console.log(slides)
-  console.log(dots)
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    console.log(slides)
+    console.log(dots)
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
 // auto next

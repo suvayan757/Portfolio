@@ -894,6 +894,24 @@ body {
     width: 100vw;
 }
 
+.scroll-down-once{
+    opacity: 0;
+    position: absolute;
+    z-index: 999999;
+    top: 12%;
+    left: 43%;
+    text-align: center;
+    font-family: var(--tfont);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.445);
+    transform: translateY(-2rem);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
 .w-header {
     font-family: 'Spartan', sans-serif;
     font-size: 8rem;
@@ -2644,6 +2662,9 @@ footer {
     .worksample {
         overflow-x: hidden;
     }
+    .scroll-down-once{
+        left: 30%;
+    }
 
     .w-header {
         font-size: 4.5rem;
@@ -3351,6 +3372,9 @@ footer {
 
     .worksample {
         overflow-x: hidden;
+    }
+    .scroll-down-once{
+        left: 30%;
     }
 
     .w-header {
@@ -4101,6 +4125,10 @@ footer {
 
     .worksample {
         overflow-x: hidden;
+    }
+    .scroll-down-once{
+        left: 37%;
+        font-size: 1.7rem;
     }
 
     .w-header {
