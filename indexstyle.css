@@ -161,7 +161,7 @@ body {
 
 .name {
     position: absolute;
-    bottom: 0;
+    bottom: 2rem;
     color: white;
     padding: 2rem;
     margin: 0 auto;

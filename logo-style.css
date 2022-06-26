@@ -161,7 +161,7 @@ body {
 
 .name {
     position: absolute;
-    bottom: 0;
+    bottom: 2rem;
     color: white;
     padding: 2rem;
     margin: 0 auto;
@@ -435,7 +435,6 @@ body {
     position: relative;
     z-index: 15;
     padding: 0.8rem 1.5rem;
-    margin-right: 1.5rem;
     border-radius: 0.4rem;
     font-weight: 400;
     font-size: 1rem;
@@ -473,6 +472,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s ease;
+    margin-left: 1.5rem;
 }
 
 .btn:hover {
@@ -648,6 +648,7 @@ body {
 
 .lightbox{
     position: absolute;
+    top: 250%;
     z-index: -1;
     height: 100vh;
     width: 100vw;
@@ -976,6 +977,7 @@ body {
     font-weight: 200;
     width: 7rem;
     margin: 1rem 0rem;
+    color: var(--black);
 }
 
 .footer-details a{

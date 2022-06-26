@@ -46,33 +46,33 @@ featuringImage.forEach((element)=>{
     })
 })
 
-$("#zero").click(function() {        
+$("#0").click(function() {        
     $('html, body').animate({
         scrollTop: $("#lightbox").offset().top
     }, 1000);
 
 });
-$("#one").click(function() {
+$("#1").click(function() {
     $('html, body').animate({
         scrollTop: $("#lightbox").offset().top
     }, 1000);
 });
-$("#two").click(function() {
+$("#2").click(function() {
     $('html, body').animate({
         scrollTop: $("#lightbox").offset().top
     }, 1000);
 });
-$("#three").click(function() {
+$("#3").click(function() {
     $('html, body').animate({
         scrollTop: $("#lightbox").offset().top
     }, 1000);
 });
-$("#four").click(function() {
+$("#4").click(function() {
     $('html, body').animate({
         scrollTop: $("#lightbox").offset().top
     }, 1000);
 });
-$("#five").click(function() {
+$("#5").click(function() {
     $('html, body').animate({
         scrollTop: $("#lightbox").offset().top
     }, 1000);
