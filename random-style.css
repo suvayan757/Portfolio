@@ -356,7 +356,7 @@ body {
 
 /* _____________________________________________________HERO */
 
-#body{
+#body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -364,7 +364,7 @@ body {
 }
 
 
-.hero-video{
+.hero-video {
     display: block;
     object-fit: cover;
     aspect-ratio: auto;
@@ -377,7 +377,7 @@ body {
     width: 100vw;
 }
 
-.hero{
+.hero {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -386,7 +386,8 @@ body {
     flex-direction: column;
     background: linear-gradient(180deg, rgba(19, 19, 19, 0) 0%, #131313 94.95%);
 }
-.hero-content{
+
+.hero-content {
     position: absolute;
     bottom: 5%;
     display: flex;
@@ -406,6 +407,7 @@ body {
     line-height: 8rem;
     padding-bottom: 2rem;
 }
+
 .portfolio {
     text-transform: uppercase;
     font-size: 1rem;
@@ -413,7 +415,8 @@ body {
     letter-spacing: 6px;
     color: var(--gb);
 }
-.hero-text{
+
+.hero-text {
     font-family: var(--tfont);
     font-weight: 200;
     color: rgba(255, 255, 255, 0.644);
@@ -424,11 +427,11 @@ body {
     padding-bottom: 1.5rem;
 }
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
 }
 
-.other-works{
+.other-works {
     background-color: var(--gb);
     color: white;
     position: relative;
@@ -447,7 +450,8 @@ body {
     text-decoration: none;
     transition: 0.3s ease;
 }
-.other-works:hover{
+
+.other-works:hover {
     color: var(--gb);
     background-color: transparent;
     border: 2px solid var(--gb);
@@ -483,7 +487,7 @@ body {
 /*_________________________________________________WORK */
 
 
-.display-works{
+.display-works {
     position: relative;
     background-color: var(--black);
     width: 100vw;
@@ -494,18 +498,19 @@ body {
     padding: 6rem 2rem;
 }
 
-.container-body{
+.container-body {
     width: 80%;
 }
 
-.featuring{
+.featuring {
     display: flex;
     justify-content: center;
     background-color: #292929;
     padding: 2.5rem;
     border-radius: 2rem;
 }
-.featuring-head{
+
+.featuring-head {
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: 500;
@@ -513,17 +518,20 @@ body {
     color: var(--gb);
     padding-bottom: 0.5rem;
 }
-.featuring-image{
+
+.featuring-image {
     height: 50%;
     width: 50%;
     border-radius: 1rem;
     transition: 0.5s ease;
     cursor: pointer;
 }
-.featuring-image:hover{
+
+.featuring-image:hover {
     transform: scale(1.02);
 }
-.featuring-text{
+
+.featuring-text {
     padding: 0rem 2rem;
     font-family: var(--tfont);
     display: flex;
@@ -531,13 +539,15 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.f-text-head{
+
+.f-text-head {
     text-align: left;
     font-size: 2rem;
     font-weight: 800;
     color: rgba(255, 255, 255, 0.9);
 }
-.f-text{
+
+.f-text {
     color: rgba(255, 255, 255, 0.651);
     text-align: center;
     font-size: 1rem;
@@ -545,26 +555,30 @@ body {
     font-weight: 200;
     padding: 2rem 0rem;
 }
-.buttons{
+
+.buttons {
     display: flex;
 }
-.view-post{
+
+.view-post {
     font-size: 0.8rem;
     padding: 0.5rem 1rem;
 }
 
-.marquee-wrapper{
+.marquee-wrapper {
     width: 100vw;
     margin-bottom: 2.5rem;
     display: flex;
     overflow: hidden;
     background-color: var(--gb);
 }
-.marquee{
+
+.marquee {
     display: flex;
 }
-.marquee p{
-    font-family:'spartan';
+
+.marquee p {
+    font-family: 'spartan';
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2rem;
@@ -573,50 +587,59 @@ body {
     color: transparent;
     animation: marquee 2s linear infinite;
 }
-.marquee2 p{
+
+.marquee2 p {
     animation-delay: 1s;
 }
-@keyframes marquee{
-    0%{
-        transform: translate(0,0);
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
     }
-    100%{
-        transform: translate(-100%,0);
+
+    100% {
+        transform: translate(-100%, 0);
     }
 }
 
-.remaining-img-1{
+.remaining-img-1 {
     flex-direction: row-reverse;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
     margin-top: 2rem;
 }
-.remaining-img-2{
+
+.remaining-img-2 {
     background-color: transparent;
 }
-.alternative-text{
+
+.alternative-text {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 2rem;
     margin-left: 2rem;
 
 }
-.alternative-text-2{
+
+.alternative-text-2 {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 2rem;
     margin-left: 0rem;
     padding: 2rem;
 
 }
-.fi-2{
+
+.fi-2 {
     border-radius: 2rem;
 }
-#two{
+
+#two {
     margin-top: 2rem;
     padding: 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.5);
 
 }
-.rev{
+
+.rev {
     margin-top: 2rem;
     padding: 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -627,12 +650,13 @@ body {
     padding: 2rem 0rem;
     flex-direction: row-reverse;
 }
+
 #three .featuring-text {
     margin-left: 0;
     margin-right: 2rem;
 }
 
-#four{
+#four {
     margin-top: 0rem;
     margin-bottom: 2rem;
     padding: 2.5rem;
@@ -642,7 +666,7 @@ body {
 
 /* ______________________________________LIGHT-BOX */
 
-.lightbox{
+.lightbox {
     position: absolute;
     z-index: -1;
     height: 100vh;
@@ -655,7 +679,7 @@ body {
     align-items: center;
 }
 
-.back-to-main{
+.back-to-main {
     position: absolute;
     top: 5%;
     left: 6%;
@@ -672,7 +696,7 @@ body {
     cursor: pointer;
 }
 
-.lightbox-img{
+.lightbox-img {
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -680,19 +704,57 @@ body {
     height: 80%;
 }
 
-#lightbox-img-1{background-image: url('r0.jpg');}
-#lightbox-img-2{background-image: url('r1.jpg');}
-#lightbox-img-3{background-image: url('r2.jpg');}
-#lightbox-img-4{background-image: url('r3.jpg');}
-#lightbox-img-5{background-image: url('r4.jpg');}
-#lightbox-img-6{background-image: url('r5.jpg');}
-#lightbox-img-7{background-image: url('r6.jpg');}
-#lightbox-img-8{background-image: url('r7.png');}
-#lightbox-img-9{background-image: url('r8.jpg');}
-#lightbox-img-10{background-image: url('r9.jpg');}
-#lightbox-img-11{background-image: url('r10.jpg');}
-#lightbox-img-12{background-image: url('r11.jpg');}
-#lightbox-img-13{background-image: url('r12.jpg');}
+#lightbox-img-1 {
+    background-image: url('r0.jpg');
+}
+
+#lightbox-img-2 {
+    background-image: url('r1.jpg');
+}
+
+#lightbox-img-3 {
+    background-image: url('r2.jpg');
+}
+
+#lightbox-img-4 {
+    background-image: url('r3.jpg');
+}
+
+#lightbox-img-5 {
+    background-image: url('r4.jpg');
+}
+
+#lightbox-img-6 {
+    background-image: url('r5.jpg');
+}
+
+#lightbox-img-7 {
+    background-image: url('r6.jpg');
+}
+
+#lightbox-img-8 {
+    background-image: url('r7.png');
+}
+
+#lightbox-img-9 {
+    background-image: url('r8.jpg');
+}
+
+#lightbox-img-10 {
+    background-image: url('r9.jpg');
+}
+
+#lightbox-img-11 {
+    background-image: url('r10.jpg');
+}
+
+#lightbox-img-12 {
+    background-image: url('r11.jpg');
+}
+
+#lightbox-img-13 {
+    background-image: url('r12.jpg');
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -844,27 +906,29 @@ body {
 
 /* ____________________________________Other works */
 
-.o-works{
+.o-works {
     padding: 3rem 0rem;
 }
 
-.mini-view{
+.mini-view {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
-.poster{
+
+.poster {
     position: relative;
     height: 25rem;
     border-radius: 1rem;
     transition: 0.3s ease;
 }
-.poster:hover{
+
+.poster:hover {
     transform: scale(1.1);
 }
 
 
-.img{
+.img {
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -874,16 +938,20 @@ body {
     justify-content: center;
     background-size: cover;
 }
-#img-1{
+
+#img-1 {
     background-image: url('poster_hero-mini-view.gif');
 }
-#img-2{
+
+#img-2 {
     background-image: url('logo_hero-mini-view.gif');
 }
-#img-3{
+
+#img-3 {
     background-image: url('illustration_hero-mini-view.gif');
 }
-.overlay{
+
+.overlay {
     height: 80%;
     width: 100%;
     bottom: 0;
@@ -893,7 +961,7 @@ body {
 }
 
 
-.text{
+.text {
     position: absolute;
     z-index: 20;
     bottom: -15%;
@@ -902,7 +970,8 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.p-head{
+
+.p-head {
     position: relative;
     border-radius: 1rem;
     color: white;
@@ -912,7 +981,8 @@ body {
     font-family: 'spartan';
     text-transform: uppercase;
 }
-.p-head::before{
+
+.p-head::before {
     content: 'Portfolio';
     position: absolute;
     bottom: 110%;
@@ -921,7 +991,8 @@ body {
     letter-spacing: 3px;
     color: var(--gb);
 }
-.visit{
+
+.visit {
     border-radius: 1rem;
     position: absolute;
     top: 0;
@@ -932,7 +1003,8 @@ body {
     font-size: 0.7rem;
     padding: 0.3rem 1rem;
 }
-.p-text{
+
+.p-text {
     color: rgba(255, 255, 255, 0.671);
     font-family: var(--tfont);
     width: 100%;
@@ -945,7 +1017,7 @@ body {
 
 /* _________________________________________________FOOTER */
 
-.footer{
+.footer {
     margin-top: 5rem;
     padding: 3rem;
     border-top: 1px solid white;
@@ -954,37 +1026,42 @@ body {
     justify-content: center;
     align-items: center;
 }
-.footer .container-body{
+
+.footer .container-body {
     width: 60%;
 }
 
-.footer-content{
+.footer-content {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    
+
 }
-.footer-details #logo{
+
+.footer-details #logo {
     width: 3rem;
     height: 3rem;
     margin: 0.5rem 0rem;
 }
-.footer-name{
+
+.footer-name {
     letter-spacing: 2px;
     font-size: 1.2rem;
     font-weight: 200;
     font-family: 'oswald';
     text-transform: uppercase;
     color: white;
-    
+
 }
-.footer-name span{
+
+.footer-name span {
     font-size: 0.7rem;
     letter-spacing: 0.5rem;
     display: block;
     font-family: var(--tfont);
 }
-.footer-details .other-works{
+
+.footer-details .other-works {
     padding: 0.2rem 0.5rem;
     font-size: 0.7rem;
     border-radius: 4px;
@@ -993,14 +1070,15 @@ body {
     margin: 1rem 0rem;
 }
 
-.footer-details a{
+.footer-details a {
     font-family: var(--tfont);
     color: white;
     text-decoration: none;
     display: block;
     padding: 0.5rem 1rem;
 }
-.footer-details a:hover{
+
+.footer-details a:hover {
     color: var(--gb);
 }
 
@@ -1008,10 +1086,12 @@ body {
     opacity: 1;
     display: flex;
 }
+
 .smi .elements {
     width: 1.7rem;
     height: 1.7rem;
 }
+
 #fb {
     background-image: url('fb.png');
     background-size: contain;
@@ -1026,6 +1106,7 @@ body {
     background-image: url('linkedin.png');
     background-size: contain;
 }
+
 footer {
     opacity: 0.5;
     padding: 1.5rem;
@@ -1036,13 +1117,17 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
 /* ______________________________________________OTHER DEVICES */
 
 @media (max-width:375px) {
     html {
         font-size: 70%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
 
     .left {
         margin: 1.8rem 2rem;
@@ -1080,20 +1165,24 @@ footer {
     .hero-head {
         font-size: 6rem;
     }
-    .hero-text{
+
+    .hero-text {
         width: 80%;
         font-size: 1.2rem;
     }
-/*_________________________________________________WORK */
+
+    /*_________________________________________________WORK */
 
 
     .display-works {
         padding: 6rem 0.5rem;
     }
-    .container-body{
+
+    .container-body {
         width: 95%;
     }
-    .featuring{
+
+    .featuring {
         padding: 1.5rem;
         border-radius: 2rem;
         display: flex;
@@ -1101,131 +1190,163 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     .featuring-image {
         height: 100%;
         width: 100%;
     }
+
     .featuring-text {
         padding: 2rem 1rem;
     }
-    .featuring-head{
+
+    .featuring-head {
         font-size: 0.9rem;
     }
-    .f-text-head{
+
+    .f-text-head {
         font-size: 2.5rem;
         text-align: center;
     }
-    .f-text{
+
+    .f-text {
         font-size: 1.2rem;
         line-height: 1.6;
     }
+
     .view-post {
         font-size: 1rem;
         padding: 0.7rem 1.5rem;
     }
-    #zero .other-works{
+
+    #zero .other-works {
         margin-right: 0rem;
     }
-    .display-works .other-works{
+
+    .display-works .other-works {
         margin-right: 0rem;
     }
-    .alternative-text{
+
+    .alternative-text {
         margin-left: 0;
         margin-top: 2rem;
         padding: 2rem;
     }
-    #two{
+
+    #two {
         padding: 1.5rem;
     }
+
     #three {
         padding: 2rem 0rem;
         flex-direction: column;
     }
+
     #three .featuring-text {
         margin-left: 0;
         margin-right: 0rem;
     }
-    #four{
+
+    #four {
         padding: 1.5rem;
     }
 
-    .dot-container{
+    .dot-container {
         height: 110px;
         width: 90vw;
     }
-    .lightbox{
+
+    .lightbox {
         overflow: hidden;
     }
 
     .o-works {
         padding: 4rem 2rem;
     }
-    .mini-view{
-        grid-template-columns: repeat(1,1fr);
+
+    .mini-view {
+        grid-template-columns: repeat(1, 1fr);
         gap: 6rem;
     }
-    .p-head{
+
+    .p-head {
         font-size: 3.2rem;
         letter-spacing: 2px;
         text-align: left;
     }
-    .p-text{
+
+    .p-text {
         font-size: 0.9rem;
         line-height: 1.7;
     }
 
-    .footer{
+    .footer {
         padding: 2rem 0rem;
         font-size: 130%;
     }
-    .footer .container-body{
+
+    .footer .container-body {
         width: 80%;
     }
-    .footer-content{
+
+    .footer-content {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        place-items:initial;
-        
+        grid-template-columns: repeat(1, 1fr);
+        place-items: initial;
+
     }
-    .footer-details a{
+
+    .footer-details a {
         padding: 0.5rem 0rem;
     }
-    .footer-details #logo{
+
+    .footer-details #logo {
         width: 4rem;
         height: 4rem;
         margin: 0.5rem 0rem;
     }
-    .footer-details .c-logo{
+
+    .footer-details .c-logo {
         display: block;
     }
-    .footer-name{
+
+    .footer-name {
         font-size: 2rem;
     }
+
     .footer-name span {
         font-size: 0.9rem;
         letter-spacing: 1rem;
         margin-top: 0.2rem;
     }
+
     .footer-details .other-works {
         font-size: 1rem;
         width: 8.6rem;
-        
+
     }
+
     .footer .smi .elements {
         width: 3rem;
         height: 3rem;
         margin-right: 1rem;
     }
-    footer{
+
+    footer {
         font-size: 1rem;
     }
 
 }
+
 @media (min-width: 376px) and (max-width:640px) {
     html {
         font-size: 85%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
+
 
     .left {
         margin: 2rem;
@@ -1259,22 +1380,27 @@ footer {
         width: 2.4rem;
         height: 2.4rem;
     }
+
     .hero-head {
         font-size: 6rem;
     }
-    .hero-text{
+
+    .hero-text {
         width: 80%;
         font-size: 1.2rem;
     }
-/*_________________________________________________WORK */
+
+    /*_________________________________________________WORK */
 
     .display-works {
         padding: 6rem 0.5rem;
     }
-    .container-body{
+
+    .container-body {
         width: 95%;
     }
-    .featuring{
+
+    .featuring {
         padding: 1.5rem;
         border-radius: 2rem;
         display: flex;
@@ -1282,125 +1408,153 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     .featuring-image {
         height: 100%;
         width: 100%;
     }
+
     .featuring-text {
         padding: 2rem 1rem;
     }
-    .featuring-head{
+
+    .featuring-head {
         font-size: 0.9rem;
     }
-    .f-text-head{
+
+    .f-text-head {
         font-size: 2.5rem;
         text-align: center;
     }
-    .f-text{
+
+    .f-text {
         font-size: 1.2rem;
         line-height: 1.6;
     }
+
     .view-post {
         font-size: 1rem;
         padding: 0.7rem 1.5rem;
     }
-    #zero .other-works{
+
+    #zero .other-works {
         margin-right: 0rem;
     }
-    .display-works .other-works{
+
+    .display-works .other-works {
         margin-right: 0rem;
     }
-    .alternative-text{
+
+    .alternative-text {
         margin-left: 0;
         margin-top: 2rem;
         padding: 2rem;
     }
-    #two{
+
+    #two {
         padding: 1.5rem;
     }
+
     #three {
         padding: 2rem 0rem;
         flex-direction: column;
     }
+
     #three .featuring-text {
         margin-left: 0;
         margin-right: 0rem;
     }
-    #four{
+
+    #four {
         padding: 1.5rem;
     }
 
-    .dot-container{
+    .dot-container {
         height: 110px;
         width: 95vw;
     }
-    .dot{
+
+    .dot {
         margin: 0.4rem 0.4rem;
     }
-    
+
     .o-works {
         padding: 4rem 0rem;
     }
-    .mini-view{
-        grid-template-columns: repeat(1,1fr);
+
+    .mini-view {
+        grid-template-columns: repeat(1, 1fr);
         gap: 6rem;
     }
-    .text{
+
+    .text {
         padding: 2rem;
     }
-    .p-head{
+
+    .p-head {
         font-size: 3.2rem;
         letter-spacing: 2px;
         text-align: left;
     }
-    .p-text{
+
+    .p-text {
         font-size: 0.9rem;
         line-height: 1.7;
     }
 
-    .footer{
+    .footer {
         padding: 2rem 0rem;
         font-size: 130%;
     }
-    .footer .container-body{
+
+    .footer .container-body {
         width: 80%;
     }
-    .footer-content{
+
+    .footer-content {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        place-items:initial;
-        
+        grid-template-columns: repeat(1, 1fr);
+        place-items: initial;
+
     }
-    .footer-details a{
+
+    .footer-details a {
         padding: 0.5rem 0rem;
     }
-    .footer-details #logo{
+
+    .footer-details #logo {
         width: 4rem;
         height: 4rem;
         margin: 0.5rem 0rem;
     }
-    .footer-details .c-logo{
+
+    .footer-details .c-logo {
         display: block;
     }
-    .footer-name{
+
+    .footer-name {
         font-size: 2rem;
     }
+
     .footer-name span {
         font-size: 0.9rem;
         letter-spacing: 1rem;
         margin-top: 0.2rem;
     }
+
     .footer-details .other-works {
         font-size: 1rem;
         width: 8.6rem;
-        
+
     }
+
     .footer .smi .elements {
         width: 3rem;
         height: 3rem;
         margin-right: 1rem;
     }
-    footer{
+
+    footer {
         font-size: 1rem;
     }
 
@@ -1411,7 +1565,11 @@ footer {
     html {
         font-size: 90%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
+
 
     .left {
         margin: 3rem;
@@ -1445,12 +1603,15 @@ footer {
         width: 3.25rem;
         height: 3.25rem;
     }
+
     #mobile-nav {
         padding-top: 11rem;
     }
+
     #mobile-nav .smi {
         padding: 1.3rem 0rem;
     }
+
     #mobile-nav .nav-element a {
         font-size: 2.5rem;
         margin: 1.5rem;
@@ -1461,7 +1622,7 @@ footer {
         height: 5rem;
         padding: 0rem 3rem;
     }
-    
+
 
     .hero-text {
         width: 85%;
@@ -1469,27 +1630,32 @@ footer {
         line-height: 1.8;
         padding-bottom: 2rem;
     }
+
     .other-works {
         font-size: 1.6rem;
         padding: 1rem 2rem;
     }
+
     .btn {
         font-size: 1.6rem;
         padding: 1rem 2rem;
     }
+
     /*_________________________________________________WORK */
 
-    .marquee p{
+    .marquee p {
         font-size: 3rem;
     }
 
     .display-works {
         padding: 6rem 0.5rem;
     }
-    .container-body{
+
+    .container-body {
         width: 85%;
     }
-    .featuring{
+
+    .featuring {
         padding: 2.5rem;
         border-radius: 2rem;
         display: flex;
@@ -1497,51 +1663,64 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
     .featuring-image {
         height: 100%;
         width: 100%;
     }
+
     .featuring-text {
         padding: 3rem 1rem;
     }
-    .featuring-head{
+
+    .featuring-head {
         font-size: 1.2rem;
     }
-    .f-text-head{
+
+    .f-text-head {
         font-size: 3.5rem;
         text-align: center;
     }
-    .f-text{
+
+    .f-text {
         font-size: 1.8rem;
         line-height: 1.8;
     }
+
     .view-post {
         font-size: 1.6rem;
         padding: 1rem 2rem;
     }
-    #zero .other-works{
+
+    #zero .other-works {
         margin-right: 0rem;
     }
-    .display-works .other-works{
+
+    .display-works .other-works {
         margin-right: 0rem;
     }
-    .alternative-text{
+
+    .alternative-text {
         margin-left: 0;
         margin-top: 2rem;
         padding: 4rem 2rem;
     }
-    #two{
+
+    #two {
         padding: 2.5rem;
     }
+
     #three {
         padding: 2rem 0rem;
         flex-direction: column;
     }
+
     #three .featuring-text {
         margin-left: 0;
         margin-right: 0rem;
     }
-    #four{
+
+    #four {
         padding: 1.5rem;
     }
 
@@ -1554,70 +1733,85 @@ footer {
     .o-works {
         padding: 4rem 2rem;
     }
-    .mini-view{
-        grid-template-columns: repeat(1,1fr);
+
+    .mini-view {
+        grid-template-columns: repeat(1, 1fr);
         gap: 6rem;
     }
-    .text{
+
+    .text {
         padding: 3rem;
     }
-    .p-head{
+
+    .p-head {
         font-size: 3.5rem;
         letter-spacing: 2px;
         text-align: left;
     }
+
     .p-head::before {
         bottom: 115%;
         font-size: 0.9rem;
     }
-    .p-text{
+
+    .p-text {
         font-size: 1.5rem;
         line-height: 1.7;
     }
 
-    .footer{
+    .footer {
         padding: 4rem 0rem;
         font-size: 160%;
     }
-    .footer .container-body{
+
+    .footer .container-body {
         width: 80%;
     }
-    .footer-content{
+
+    .footer-content {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        place-items:initial;
-        
+        grid-template-columns: repeat(3, 1fr);
+        place-items: initial;
+
     }
-    .footer-details a{
+
+    .footer-details a {
         padding: 1rem 0rem;
     }
-    .footer-details #logo{
+
+    .footer-details #logo {
         width: 4rem;
         height: 4rem;
         margin: 0.5rem 0rem;
     }
-    .footer-details .c-logo{
+
+    .footer-details .c-logo {
         display: block;
     }
-    .footer-name{
+
+    .footer-name {
         font-size: 2rem;
     }
+
     .footer-name span {
         font-size: 0.9rem;
         letter-spacing: 1rem;
         margin-top: 0.2rem;
     }
+
     .footer-details .other-works {
         font-size: 1rem;
         width: 8.6rem;
-        
+
     }
+
     .footer .smi .elements {
         width: 3rem;
         height: 3rem;
         margin-right: 1rem;
     }
-    footer{
+
+    footer {
         font-size: 1.3rem;
     }
 

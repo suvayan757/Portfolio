@@ -633,7 +633,7 @@ body {
     border-radius: 2rem;
 }
 
-#two{
+#two {
     margin-top: 2rem;
     padding: 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -1152,7 +1152,10 @@ footer {
     html {
         font-size: 70%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
 
     .left {
         margin: 1.8rem 2rem;
@@ -1199,7 +1202,7 @@ footer {
 
     /*_________________________________________________WORK */
 
-    
+
     .display-works {
         padding: 6rem 0.5rem;
     }
@@ -1294,11 +1297,12 @@ footer {
         margin-right: 0rem;
     }
 
-    .dot-container{
+    .dot-container {
         height: 110px;
         width: 90vw;
     }
-    .lightbox{
+
+    .lightbox {
         overflow: hidden;
     }
 
@@ -1384,7 +1388,12 @@ footer {
     html {
         font-size: 85%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
+
+    
 
     .left {
         margin: 2rem;
@@ -1524,11 +1533,13 @@ footer {
         padding: 2rem;
         margin-right: 0rem;
     }
-    .dot-container{
+
+    .dot-container {
         height: 110px;
         width: 95vw;
     }
-    .dot{
+
+    .dot {
         margin: 0.4rem 0.4rem;
     }
 
@@ -1619,7 +1630,11 @@ footer {
     html {
         font-size: 90%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
+
 
     .left {
         margin: 3rem;
@@ -1697,7 +1712,7 @@ footer {
 
     /*_________________________________________________WORK */
 
-    .marquee p{
+    .marquee p {
         font-size: 3rem;
     }
 
@@ -1798,10 +1813,11 @@ footer {
 
     /* ______________________ */
 
-    .dot-container{
+    .dot-container {
         height: 120px;
         width: 95vw;
     }
+
     .dot {
         height: 4rem;
         width: 4rem;

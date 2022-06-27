@@ -513,7 +513,7 @@ body {
 }
 
 .elements {
-    
+
     width: 2rem;
     height: 2rem;
     opacity: 0.5;
@@ -883,7 +883,7 @@ body {
     width: 100vw;
 }
 
-.scroll-down-once{
+.scroll-down-once {
     opacity: 0;
     position: absolute;
     z-index: 999999;
@@ -1613,7 +1613,7 @@ body {
     height: 10px;
     width: 10px;
     margin: 0 2px;
-    
+
     background-color: rgb(255 255 255 / 40%);
     border-radius: 50%;
     display: inline-block;
@@ -1816,7 +1816,7 @@ body {
     background-position: 50% 50%;
     height: 12rem;
     width: 12rem;
-    
+
 }
 
 #brand-name-1 {
@@ -2268,7 +2268,7 @@ body {
 /* _______________________________________________FOOTER */
 
 
-.footer{
+.footer {
     position: relative;
     background-color: var(--dblue);
     padding: 3rem;
@@ -2277,46 +2277,51 @@ body {
     justify-content: center;
     align-items: center;
 }
-.footer::before{
+
+.footer::before {
     content: '';
     position: absolute;
     width: 100%;
     border-top: 1px solid white;
     bottom: 80%;
 }
-.container-body{
+
+.container-body {
     width: 60%;
 }
 
-.footer-content{
+.footer-content {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    
+
 }
-.footer-details #logo{
+
+.footer-details #logo {
     fill: white;
     width: 3rem;
     height: 3rem;
     margin: 0.5rem 0rem;
 }
-.footer-name{
+
+.footer-name {
     letter-spacing: 2px;
     font-size: 1.2rem;
     font-weight: 200;
     font-family: 'oswald';
     text-transform: uppercase;
     color: white;
-    
+
 }
-.footer-name span{
+
+.footer-name span {
     font-size: 0.7rem;
     letter-spacing: 0.5rem;
     display: block;
     font-family: var(--tfont);
 }
 
-.other-works{
+.other-works {
     background-color: transparent;
     color: white;
     border: 1px solid white;
@@ -2336,12 +2341,14 @@ body {
     text-decoration: none;
     transition: 0.3s ease;
 }
-.other-works:hover{
+
+.other-works:hover {
     color: var(--dblue);
     background-color: white;
     border: 1px solid white;
 }
-.footer-details .other-works{
+
+.footer-details .other-works {
     padding: 0.3rem 0.5rem;
     font-size: 0.8rem;
     border-radius: 4px;
@@ -2350,14 +2357,15 @@ body {
     margin: 1rem 0rem;
 }
 
-.footer-details a{
+.footer-details a {
     font-family: var(--tfont);
     color: white;
     text-decoration: none;
     display: block;
     padding: 0.5rem 1rem;
 }
-.footer-details a:hover{
+
+.footer-details a:hover {
     color: var(--gb);
 }
 
@@ -2367,6 +2375,7 @@ body {
     padding: 0;
     justify-content: flex-start;
 }
+
 .footer .smi .elements {
     width: 1.7rem;
     height: 1.7rem;
@@ -2392,7 +2401,11 @@ footer {
     html {
         font-size: 70%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
+
 
     .left {
         margin: 1.8rem 2rem;
@@ -2559,7 +2572,7 @@ footer {
     .abt {
         width: 30%;
         height: 100%;
-        
+
     }
 
     .abt-head {
@@ -2626,7 +2639,8 @@ footer {
     .worksample {
         overflow-x: hidden;
     }
-    .scroll-down-once{
+
+    .scroll-down-once {
         left: 30%;
     }
 
@@ -2858,7 +2872,8 @@ footer {
         justify-content: center;
         background-color: var(--dblue);
     }
-    .clients::before{
+
+    .clients::before {
         content: '';
         position: absolute;
         z-index: -1;
@@ -3036,56 +3051,67 @@ footer {
     }
 
     /* ________________________________FOOTER */
-    .footer{
+    .footer {
         padding: 2rem 0rem;
         font-size: 130%;
     }
-    .footer::before{
+
+    .footer::before {
         content: '';
         position: absolute;
         width: 100%;
         border-top: 1px solid white;
         bottom: 100%;
     }
-    .footer .container-body{
+
+    .footer .container-body {
         width: 80%;
     }
-    .footer-content{
+
+    .footer-content {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        place-items:initial;
-        
+        grid-template-columns: repeat(1, 1fr);
+        place-items: initial;
+
     }
-    .footer-details a{
+
+    .footer-details a {
         padding: 0.5rem 0rem;
     }
-    .footer-details #logo{
+
+    .footer-details #logo {
         width: 4rem;
         height: 4rem;
         margin: 0.5rem 0rem;
     }
-    .footer-details .c-logo{
+
+    .footer-details .c-logo {
         display: block;
     }
-    .footer-name{
+
+    .footer-name {
         font-size: 2rem;
     }
+
     .footer-name span {
         font-size: 0.9rem;
         letter-spacing: 1rem;
         margin-top: 0.2rem;
     }
+
     .footer-details .other-works {
         font-size: 1rem;
         width: 8.6rem;
-        
+
     }
+
     .footer .smi .elements {
         width: 3rem;
         height: 3rem;
         margin-right: 1rem;
     }
-    footer{
+
+    footer {
         font-size: 1rem;
     }
 
@@ -3097,7 +3123,11 @@ footer {
     html {
         font-size: 75%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
+
 
     .left {
         margin: 2rem;
@@ -3334,7 +3364,8 @@ footer {
     .worksample {
         overflow-x: hidden;
     }
-    .scroll-down-once{
+
+    .scroll-down-once {
         left: 30%;
     }
 
@@ -3565,7 +3596,8 @@ footer {
         background-color: var(--dblue);
         padding-top: 5rem;
     }
-    .clients::before{
+
+    .clients::before {
         content: '';
         position: absolute;
         z-index: -1;
@@ -3741,52 +3773,63 @@ footer {
     }
 
     /* _________________________FOOTER */
-    .footer{
+    .footer {
         padding: 2rem 0rem;
         font-size: 130%;
     }
-    .footer::before{
+
+    .footer::before {
         bottom: 100%;
     }
-    .footer .container-body{
+
+    .footer .container-body {
         width: 80%;
     }
-    .footer-content{
+
+    .footer-content {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        place-items:initial;
-        
+        grid-template-columns: repeat(1, 1fr);
+        place-items: initial;
+
     }
-    .footer-details a{
+
+    .footer-details a {
         padding: 0.5rem 0rem;
     }
-    .footer-details #logo{
+
+    .footer-details #logo {
         width: 4rem;
         height: 4rem;
         margin: 0.5rem 0rem;
     }
-    .footer-details .c-logo{
+
+    .footer-details .c-logo {
         display: block;
     }
-    .footer-name{
+
+    .footer-name {
         font-size: 2rem;
     }
+
     .footer-name span {
         font-size: 0.9rem;
         letter-spacing: 1rem;
         margin-top: 0.2rem;
     }
+
     .footer-details .other-works {
         font-size: 1rem;
         width: 8.6rem;
-        
+
     }
+
     .footer .smi .elements {
         width: 3rem;
         height: 3rem;
         margin-right: 1rem;
     }
-    footer{
+
+    footer {
         font-size: 1rem;
     }
 
@@ -3798,7 +3841,10 @@ footer {
     html {
         font-size: 90%;
     }
-    .name {bottom: 5rem};
+
+    .name {
+        bottom: 5rem;
+    }
 
     .left {
         margin: 3rem;
@@ -4084,7 +4130,8 @@ footer {
     .worksample {
         overflow-x: hidden;
     }
-    .scroll-down-once{
+
+    .scroll-down-once {
         left: 37%;
         font-size: 1.7rem;
     }
@@ -4157,7 +4204,9 @@ footer {
         line-height: 1.5rem;
         font-size: 1.2rem;
     }
-    #lp-right-arrow, #lp-left-arrow {
+
+    #lp-right-arrow,
+    #lp-left-arrow {
         margin-bottom: 15rem;
     }
 
@@ -4320,7 +4369,8 @@ footer {
         background-color: var(--dblue);
         padding-top: 5rem;
     }
-    .clients::before{
+
+    .clients::before {
         content: '';
         position: absolute;
         z-index: -1;
@@ -4475,51 +4525,63 @@ footer {
         margin-right: 2rem;
         margin-top: 1rem;
     }
-    .footer{
+
+    .footer {
         padding: 4rem 0rem;
         font-size: 160%;
     }
-    .footer::before{
+
+    .footer::before {
         bottom: 100%;
     }
-    .footer .container-body{
+
+    .footer .container-body {
         width: 80%;
     }
-    .footer-content{
+
+    .footer-content {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        place-items:initial;
-        
+        grid-template-columns: repeat(3, 1fr);
+        place-items: initial;
+
     }
-    .footer-details a{
+
+    .footer-details a {
         padding: 1rem 0rem;
     }
-    .footer-details #logo{
+
+    .footer-details #logo {
         width: 4rem;
         height: 4rem;
         margin: 0.5rem 0rem;
     }
-    .footer-details .c-logo{
+
+    .footer-details .c-logo {
         display: block;
     }
-    .footer-name{
+
+    .footer-name {
         font-size: 2rem;
     }
+
     .footer-name span {
         font-size: 0.9rem;
         letter-spacing: 1rem;
         margin-top: 0.2rem;
     }
+
     .footer-details .other-works {
         font-size: 1rem;
         width: 8.6rem;
     }
+
     .footer .smi .elements {
         width: 3rem;
         height: 3rem;
         margin-right: 1rem;
     }
-    footer{
+
+    footer {
         font-size: 1.3rem;
     }
 
