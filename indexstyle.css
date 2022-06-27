@@ -187,7 +187,6 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    /* box-shadow: 0px 0px 16px 10px rgb(19 19 19); */
 }
 
 .left {
@@ -456,7 +455,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid white; */
     position: relative;
     z-index: 15;
 }
@@ -515,7 +513,7 @@ body {
 }
 
 .elements {
-    /* border: 2px solid red; */
+    
     width: 2rem;
     height: 2rem;
     opacity: 0.5;
@@ -560,7 +558,6 @@ body {
 /* ____________________________________________________ABOUT */
 
 .about {
-    /* height: 46rem; */
     width: 100vw;
     display: flex;
     background-color: var(--black);
@@ -585,7 +582,6 @@ body {
 
 #about .top {
     width: 100%;
-    /* height: 45%; */
     padding: 5rem 0rem;
     display: flex;
     flex-direction: column;
@@ -764,11 +760,9 @@ body {
     top: 21%;
     z-index: 100;
     font-size: 9rem;
-    /* font-family: var(--tfont); */
     font-family: 'spartan', sans-serif;
     letter-spacing: -0.5rem;
     color: var(--black);
-    /* font-weight: bolder; */
     -webkit-text-stroke: 3px white;
 }
 
@@ -776,11 +770,9 @@ body {
     position: absolute;
     z-index: 100;
     font-size: 9rem;
-    /* font-family: var(--tfont); */
     font-family: 'spartan', sans-serif;
     letter-spacing: -0.5rem;
     color: white;
-    /* font-weight : bolder; */
 }
 
 #matter {
@@ -788,11 +780,9 @@ body {
     bottom: 21%;
     z-index: 100;
     font-size: 9rem;
-    /* font-family: var(--tfont); */
     font-family: 'spartan', sans-serif;
     letter-spacing: -0.5rem;
     color: var(--black);
-    /* font-weight: bolder; */
     -webkit-text-stroke: 3px white;
 }
 
@@ -860,7 +850,6 @@ body {
 .w-lyellow::after,
 .w-gb::after {
     content: '';
-    /* border-top: 1px solid var(--lyellow); */
     backdrop-filter: blur(10px);
     box-shadow: 2px -2px 20px 2px #1313138a;
     position: absolute;
@@ -1217,7 +1206,6 @@ body {
 /* _________________________________________Landing page  */
 
 .landing-page {
-    /* height: 45rem; */
     width: 100vw;
     background-color: var(--gb);
     display: flex;
@@ -1379,8 +1367,6 @@ body {
 .det-head {
     margin-top: 3rem;
     font-size: 2.3rem;
-    /* display: flex;
-    align-items: center; */
     text-transform: uppercase;
 }
 
@@ -1390,7 +1376,6 @@ body {
 }
 
 .ach-details>div {
-    /* margin-top: 1rem; */
     display: flex;
     align-items: center;
 }
@@ -1596,9 +1581,6 @@ body {
     padding: 16px;
     color: white;
     font-weight: bold;
-    /* font-size: 18px; */
-    transition: 0.6s ease;
-    /* border-radius: 0 3px 3px 0; */
     user-select: none;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1662,7 +1644,6 @@ body {
 .reviews {
     width: 90%;
     padding: 3rem;
-    /* background-color: rgb(209, 209, 209); */
     border: 1px solid #13131380;
     border-radius: 0.7rem;
     font-family: var(--tfont);
@@ -1701,7 +1682,6 @@ body {
 .rev-name {
     font-size: 1.1rem;
     font-weight: 500;
-    /* padding-bottom: 0.3rem; */
     color: #303030;
 }
 
@@ -1713,7 +1693,6 @@ body {
 }
 
 .person-brand {
-    /* padding-bottom: 1rem; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -1815,12 +1794,10 @@ body {
     font-family: 'spartan';
     letter-spacing: 3px;
     font-size: 1.5rem;
-    /* color: #13131393; */
     width: 100vw;
     padding: 0.3rem 0rem;
     text-align: center;
     color: var(--gb);
-    /* -webkit-text-stroke: 1px var(--black); */
     background-color: #13131380;
     outline: 1px solid #13131380;
     outline-offset: 0.2rem;
@@ -1839,7 +1816,7 @@ body {
     background-position: 50% 50%;
     height: 12rem;
     width: 12rem;
-    /* border: 2px solid red; */
+    
 }
 
 #brand-name-1 {
@@ -2238,7 +2215,6 @@ body {
     padding: 0.8rem 2rem;
     border-radius: 2rem;
     transition: 0.6s ease;
-    /* animation: timeout 2s ease  1; */
 }
 
 @keyframes timeout {
@@ -2387,7 +2363,6 @@ body {
 
 .footer .smi {
     opacity: 1;
-    /* width: 40%; */
     display: flex;
     padding: 0;
     justify-content: flex-start;
@@ -2399,7 +2374,6 @@ body {
 
 footer {
     background-color: var(--dblue);
-    /* opacity: 0.5; */
     padding: 1.5rem;
     width: 100vw;
     text-align: center;
@@ -2408,17 +2382,6 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
-/* footer {
-    height: 3rem;
-    background-color: var(--dblue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--tfont);
-    border-top: 1px solid white;
-    color: white;
-    font-size: 0.9rem;
-} */
 
 
 /* ______________________________________________OTHER DEVICES */
@@ -2429,6 +2392,7 @@ footer {
     html {
         font-size: 70%;
     }
+    .name {bottom: 5rem};
 
     .left {
         margin: 1.8rem 2rem;
@@ -2595,7 +2559,7 @@ footer {
     .abt {
         width: 30%;
         height: 100%;
-        /* border: 2px solid red; */
+        
     }
 
     .abt-head {
@@ -2679,7 +2643,6 @@ footer {
 
     .w-text {
         font-size: 1.2rem;
-        /* line-height: 1.8rem; */
         text-align: justify;
         width: 75%;
         font-weight: 200;
@@ -2894,8 +2857,6 @@ footer {
         align-items: center;
         justify-content: center;
         background-color: var(--dblue);
-        /* background-color: var(--gb); */
-        /* padding-top: 5rem; */
     }
     .clients::before{
         content: '';
@@ -2946,7 +2907,6 @@ footer {
     .reviews {
         width: 97%;
         padding: 1.5rem;
-        /* background-color: rgb(209, 209, 209); */
         border: 1px solid #13131380;
         border-radius: 0.7rem;
         font-family: var(--tfont);
@@ -3137,6 +3097,7 @@ footer {
     html {
         font-size: 75%;
     }
+    .name {bottom: 5rem};
 
     .left {
         margin: 2rem;
@@ -3837,6 +3798,7 @@ footer {
     html {
         font-size: 90%;
     }
+    .name {bottom: 5rem};
 
     .left {
         margin: 3rem;
@@ -4081,10 +4043,8 @@ footer {
     .dblue {
         width: 5rem;
         height: 50%;
-        /* border: 2px solid red; */
         border-top-left-radius: 5rem;
         border-top-right-radius: 5rem;
-        /* background-color: var(--dblue); */
         background: linear-gradient(45deg, var(--lblue), var(--dblue));
         position: relative;
         z-index: 30;
@@ -4094,8 +4054,6 @@ footer {
 
     .a-img {
         width: 50%;
-        /* height: 70%; */
-        /* border: 2px solid red; */
         bottom: 0;
         right: -2rem;
     }
@@ -4157,7 +4115,6 @@ footer {
     .w-gb::after {
         height: 70%;
         width: 90%;
-        /* border:none; */
     }
 
     .arrow {
@@ -4345,7 +4302,6 @@ footer {
 
     .achieve-head {
         font-size: 3.9rem;
-        /* transform: rotateZ(0deg) translateX(-15rem); */
         letter-spacing: 1px;
     }
 
@@ -4361,7 +4317,6 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* background-color: var(--gb); */
         background-color: var(--dblue);
         padding-top: 5rem;
     }
@@ -4419,7 +4374,6 @@ footer {
     .reviews {
         width: 97%;
         padding: 1.5rem;
-        /* background-color: rgb(209, 209, 209); */
         border: 1px solid #13131380;
         border-radius: 0.7rem;
         font-family: var(--tfont);
@@ -4466,19 +4420,16 @@ footer {
     #contact .left #free {
         font-size: 13rem;
         line-height: 13rem;
-        /* border: 2px solid red; */
     }
 
     #contact .left #lan {
         font-size: 15.43rem;
         line-height: 12.7rem;
-        /* border: 2px solid red; */
     }
 
     #contact .left #cer {
         font-size: 16.3rem;
         line-height: 15.1rem;
-        /* border: 2px solid red; */
     }
 
     #contact .right {
@@ -4498,11 +4449,9 @@ footer {
         font-size: 5rem;
         letter-spacing: 0.1rem;
         -webkit-text-stroke: 3px var(--black);
-
     }
 
     .email {
-
         font-size: 1.7rem;
     }
 
@@ -4564,7 +4513,6 @@ footer {
     .footer-details .other-works {
         font-size: 1rem;
         width: 8.6rem;
-        
     }
     .footer .smi .elements {
         width: 3rem;

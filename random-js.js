@@ -141,7 +141,6 @@ cross.addEventListener('click', () => {
     cross.style.display = "none";
     access.style.display = "inline-block";
     navbar.style.borderBottom="none"
-    // navbar.style.boxShadow = '0px 0px 16px 10px rgb(19 19 19)';
     navbar.style.backgroundColor = x;
     logo.style.backgroundImage = "url('logo-w.png')";
 });
