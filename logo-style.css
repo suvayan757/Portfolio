@@ -1096,10 +1096,9 @@ footer {
     }
 
     .name {
-        bottom: 5rem
+        bottom: 5rem;
     }
 
-    ;
 
     .left {
         margin: 1.8rem 2rem;
